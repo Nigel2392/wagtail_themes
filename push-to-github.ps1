@@ -5,6 +5,7 @@ param (
 
 
 $ProjectName = "wagtail_themes"
+$PyPiName = "wagtail_theme_manager"
 
 
 function IsNumeric ($Value) {
@@ -149,7 +150,7 @@ Function _PYPI_DistName {
         [string]$Append = ".tar.gz"
     )
 
-    return "$ProjectName-$Version$Append"
+    return "$PyPiName-$Version$Append"
 }
 
 Function PYPI_Build {
